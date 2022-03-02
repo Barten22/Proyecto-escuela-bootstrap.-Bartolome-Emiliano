@@ -1,0 +1,39 @@
+.ewk_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-image: url(../images/establecimiento.jpeg);
+}
+
+.ewk_sombra{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+    margin: auto;
+
+}
+
+.ewk_sombra hr{
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.ewk_sombra h1{
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+.ewk_sombra p{
+    font-size: 2vw;
+    margin-bottom: 10px;
+    color: rgb(233, 233, 22);
+}
