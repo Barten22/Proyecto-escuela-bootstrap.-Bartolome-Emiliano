@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-cole-con-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css css/animation.css css/banner.css css/fontello-codes.css css/fontello-embedded.css css/fontello-ie7-codes.css css/fontello-ie7.css css/keframes.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barten22/Proyecto-escuela-bootstrap.-Bartolome-Emiliano.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barten22/Proyecto-escuela-bootstrap.-Bartolome-Emiliano/issues"
+  },
+  "homepage": "https://github.com/Barten22/Proyecto-escuela-bootstrap.-Bartolome-Emiliano#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
