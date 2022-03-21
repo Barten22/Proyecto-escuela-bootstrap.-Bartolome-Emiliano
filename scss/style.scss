@@ -162,3 +162,13 @@ textarea {
 		}
 	}
 }
+
+
+.carousel-caption {
+	--bs-bg-opacity: 0.8;
+	background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+.mapa{
+	justify-content: center;
+}
