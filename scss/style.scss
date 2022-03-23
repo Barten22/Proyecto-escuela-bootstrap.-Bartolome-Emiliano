@@ -1,3 +1,11 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
 
 * {
 	margin: 0%;
@@ -24,14 +32,7 @@ body {
 		text-align: justify;
 	}
 }
-.container-foot {
-	text-align: center;
-	background-color: rgba(1, 1, 1, 0.863);
-	padding: 5%;
-	color: aliceblue;
-	margin-top: 100px;
-	display: block;
-}
+
 .container-form {
 	margin-top: 60px;
 	text-align: center;
@@ -172,3 +173,61 @@ textarea {
 .mapa{
 	justify-content: center;
 }
+
+
+.container-foot {
+	text-align: center;
+	background-color: rgba(1, 1, 1, 0.863);
+	padding: 5%;
+	color: aliceblue;
+	margin-top: 100px;
+	display: block;
+}
+
+/*OPERACIONES*/
+
+$centrado: center;
+$negro: rgba(1, 1, 1, 0.863);
+$amarillo: rgb(183, 224, 116);
+$margen: 100px;
+$padding: 5px;
+
+.extended{
+	background-color: $amarillo;
+	text-align: $centrado;
+	color: $negro;
+	margin-top: $margen;
+	padding: $padding;
+	display: block;
+}
+
+/*BUCLES*/
+
+@for $galeria from 1 to 16 {
+	.col-lg-4-#{$galeria}
+		{
+			background-color: rgb(255, 255, 255);
+			width: 10% * $galeria;
+		}
+	
+}
+
+
+/*EACH*/
+$color: black;
+@each $color in blue, green {
+	.color {
+		color: $color;
+	}	
+}
+
+/*MAP*/
+$colores:(color1:#111010, color2:#1342c4, color3:#65be1c);
+
+
+@each $clave2, $valor2 in $colores {
+    .#{$clave2} {
+        color:$valor2;
+    }
+}
+
